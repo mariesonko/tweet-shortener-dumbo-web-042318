@@ -9,3 +9,7 @@ def word_substituter(tweet)
        word = dictionary[word.downcase] : word }.join(" ")
 
 end
+
+def bulk_tweet_shortener(tweets)
+  tweets.collect {|tweet| puts word_substituter(tweet) }
+end 
